@@ -45,7 +45,7 @@ function Login() {
                             type="text"
                             id="usuario"
                             name="usuario"
-                            placeholder="Usuario"
+                            placeholder="Usuario@email.com"
                             className="border-2 border-slate-700 rounded p-2"
                             value={usuarioLogin.usuario}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
@@ -65,7 +65,7 @@ function Login() {
                     </div>
                     <button
                         type='submit'
-                        className="rounded bg-indigo-400 flex justify-center
+                        className="rounded bg-slate-800 flex justify-center
                                    hover:bg-indigo-900 text-white w-1/2 py-2">
                         {isLoading ? <RotatingLines
                             strokeColor="white"
